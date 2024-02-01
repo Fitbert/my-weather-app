@@ -14,7 +14,7 @@ function setQuery(evt){
     }
 }
 function getResults(query) {
-    fetch('https://api.openweathermap.org/data/2.5/weather?q=${query}&units=metric&APPID=7ee985d3f3fcb82608bed4de2f5719c6')
+    fetch('https://api.openweathermap.org/data/2.5/weather?q={city name},{state code},{country code}&appid=7ee985d3f3fcb82608bed4de2f5719c6')
     .then(weather => {
         return weather.json();
     }) .then(displayResults);
