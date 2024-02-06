@@ -10,6 +10,9 @@ My Weather Dashboard
 
 The Weather Dashboard shows a 5 days forcast with addional information such as uv index and wind and humidity. This dash will show previous searches to recall for cities and store locally.
 
+## links
+https://github.com/Fitbert/my-weather-app.git
+https://fitbert.github.io/my-weather-app/
 ## ScreenShots / Gif
 
 ./images/sc1.png
