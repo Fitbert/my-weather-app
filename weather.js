@@ -69,6 +69,17 @@ function getWeather(q) {
         $('#cityList').append(cityMain1);
     });
 }
+function displayUVindex(uv) {
+    $.ajax({ 
+        url: "https://api.openweathermap.org/data/2.5/uvi?appid=" + APIKey + uv,
+        method: "GET"
+    }).then(function (response) {
+        var UVIndex = $("<p><span>");
+        UVIndex.attr("class", "badge badge-danger");
+        UVIndex.text(response.value);
+        $("#cityList").append('UV-Index : ').append(UVIndex);       
+    });
+}
 
 function displayForecast(c) {
   $.ajax({ 
